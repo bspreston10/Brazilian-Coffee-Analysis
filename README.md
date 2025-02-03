@@ -25,9 +25,21 @@ After running the lasso regression model, we achieved underperforming metrics on
 | RSME   | 26.23 |
 | R^2    | 0.57  |
 
+<img width="850" alt="Screenshot 2025-02-03 at 9 50 29 AM" src="https://github.com/user-attachments/assets/88fce8ad-1a00-4cea-83d2-5d27f77953a0" />
 
+We see that the model is on average **$26 off of the actual values**, and **only 57% of the data is explained** in this model. Looking at this graphically, we see that the model does well predicting values between 200 and 250, however when we get to more extreme values the model's performance worsens. The reason behind this model's poor performance, is likely due to the model trying to capture a linear trend in the stock that exhibits non-linear relationship.
 
 RANDOM FOREST MODEL
+After setting the benchmark model (lasso regression), I implemented a random forest model to try and capture the non-linear relationship shown in stock data. We see in the data below that the random forest model was able to capture these trends better than the lasso regression above:
+
+| Metric | Score |
+|--------|-------|
+| MSE    | 41.08 |
+| RSME   | 6.41  |
+| R^2    | 0.97  |
+
+<img width="850" alt="Screenshot 2025-02-03 at 10 19 49 AM" src="https://github.com/user-attachments/assets/6987ce31-e574-4092-9cd9-8c5ecb2bfebd" />
+
 
 FINAL INSIGHTS
 

@@ -20,6 +20,7 @@ The inital model I tested was the lasso regression model to create a benchmark f
 After running the lasso regression model, we achieved underperforming metrics on the test dataset:
 
 | Metric | Score |
+|--------|-------|
 | MSE    | 688.09|
 | RSME   | 26.23 |
 | R^2    | 0.57  |
